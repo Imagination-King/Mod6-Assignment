@@ -5,12 +5,14 @@ function PersonalInfo({onChange}) {
     fullName: "",
     email: "",
     phone: "",
+    bio: "",
   });
   //I felt it kind of dumb to automatically update the resume as you're typing, so I've implemented tempInfo so the resume is only updated when Submit is pressed
   const [tempInfo, setTempInfo] = useState({
     fullName: "",
     email: "",
-    phone: ""
+    phone: "",
+    bio: "",
   })
   
   const[editable, setEditable] = useState(false);
@@ -42,8 +44,7 @@ function PersonalInfo({onChange}) {
       <h2>Personal Information</h2>
       <div>
         <label htmlFor="fullName">Full Name:</label>
-        <input
-          type="text" id="fullName" name="fullName" value={tempInfo.fullName} onChange={handleChange} disabled={!editable}/>
+        <input type="text" id="fullName" name="fullName" value={tempInfo.fullName} onChange={handleChange} disabled={!editable}/>
       </div>
       <div>
         <label htmlFor="email">Email:</label>
@@ -52,6 +53,10 @@ function PersonalInfo({onChange}) {
       <div>
         <label htmlFor="phone">Phone Number:</label>
         <input type="text" id="phone" name="phone" value={tempInfo.phone} onChange={handleChange} disabled={!editable}/>
+      </div>
+      <div>
+        <label htmlFor="bio">Bio:</label>
+        <textarea id="bio" name="bio" rows="4" cols="30" value={tempInfo.bio} onChange={handleChange} disabled={!editable}></textarea>
       </div>
       {editable ? (
         <>
