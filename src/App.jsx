@@ -36,39 +36,43 @@ function App() {
   const handleWorkInfoUpdate = (updatedInfo) => {
     setWorkInfo(updatedInfo);
   };
-
+  //console.log(WorkInfo);
   return (
     <div id="container">
-      <div className="editBox">
-        <PersonalInfo onChange={handlePersonalInfoUpdate} />
-      </div>
-      <div className="editBox">
-        <Education onChange={handleEducationUpdate} />
-      </div>
-      <div className="editBox">
-        <WorkInfo onChange={handleWorkInfoUpdate} />
+      <div id="editPane">
+        <div className="editBox">
+          <PersonalInfo onChange={handlePersonalInfoUpdate} />
+        </div>
+        <div className="editBox">
+          <Education onChange={handleEducationUpdate} />
+        </div>
+        <div className="editBox">
+          <WorkInfo onChange={handleWorkInfoUpdate} />
+        </div>
       </div>
 
-      <div>
-        <h1>{personalInfo.fullName}</h1>
-        <h2>{personalInfo.email}</h2>
-        <h3>{personalInfo.phone}</h3>
-        <p>{personalInfo.bio}</p>
-      </div>
-      <div>
-        <h3>{educationInfo.schoolName}</h3>
-        <p>{educationInfo.yearStart}</p>
-        <p>{educationInfo.yearEnd}</p>
-        <p>{educationInfo.course}</p>
-        <p>{educationInfo.location}</p>
-      </div>
-      <div>
-        <h3>{workInfo.company}</h3>
-        <p>{workInfo.position}</p>
-        <p>{workInfo.yearStart}</p>
-        <p>{workInfo.yearEnd}</p>
-        <p>{workInfo.location}</p>
-        <p>{workInfo.jobDesc}</p>
+      <div id="resume">
+        <div>
+          <h1>{personalInfo.fullName}</h1>
+          <h2>{personalInfo.email}</h2>
+          <h3>{personalInfo.phone}</h3>
+          <p>{personalInfo.bio}</p>
+        </div>
+        <div>
+          <h3>{educationInfo.schoolName}</h3>
+          <p>{educationInfo.yearStart}</p>
+          <p>{educationInfo.yearEnd}</p>
+          <p>{educationInfo.course}</p>
+          <p>{educationInfo.location}</p>
+        </div>
+        <div>
+          <h3>{workInfo.company}</h3>
+          <p>{workInfo.position}</p>
+          <p>{workInfo.yearStart}</p>
+          <p>{workInfo.yearEnd}</p>
+          <p>{workInfo.location}</p>
+          <p>{workInfo.jobDesc}</p>
+        </div>
       </div>
     </div>
   );

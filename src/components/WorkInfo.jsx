@@ -44,7 +44,7 @@ function WorkInfo({onChange}) {
 
   return(
     <div>
-      <h2>Education</h2>
+      <h2>Work Experience</h2>
       <div>
         <label htmlFor="company">Company Name:</label>
         <input type="text" id="company" name="company" value={tempInfo.company} onChange={handleChange} disabled={!editable}/>
@@ -60,7 +60,6 @@ function WorkInfo({onChange}) {
         <label htmlFor="yearEnd">Year Ended:</label>
         <input type="text" id="yearEnd" name="yearEnd" value={tempInfo.yearEnd} onChange={handleChange} disabled={!editable}/>
       </div>
-      
       <div>
         <label htmlFor="location">Location:</label>
         <input type="text" id="location" name="location" value={tempInfo.location} onChange={handleChange} disabled={!editable}/>
@@ -81,4 +80,5 @@ function WorkInfo({onChange}) {
   )
 }
 
-export default WorkInfo
+export default WorkInfo;
+//:)

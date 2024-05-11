@@ -10,6 +10,8 @@ textarea {
   border: .5em double lightblue;
   border-radius: 2em 0 0 2em;
   padding: 1em;
+  display: flex;
+  flex-direction: column;
 }
 
 .btn {
