@@ -1,0 +1,23 @@
+#container {
+  display: flex;
+}
+
+.editBox {
+  border: .5em double lightblue;
+  border-radius: 2em 0 0 2em;
+  padding: 1em;
+}
+
+.btn {
+  margin: .7em .3em;
+}
+
+#btnCancel {
+  color: red;
+  background-color: lightcoral;
+}
+
+#btnSubmit {
+  color: green;
+  background-color: lightgreen;
+}
