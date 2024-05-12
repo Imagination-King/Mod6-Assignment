@@ -52,27 +52,27 @@ function App() {
       </div>
 
       <div id="resume">
-        <div>
+        <section className="personalInfo">
           <h1>{personalInfo.fullName}</h1>
           <h2>{personalInfo.email}</h2>
           <h3>{personalInfo.phone}</h3>
           <p>{personalInfo.bio}</p>
-        </div>
-        <div>
+        </section>
+        <section className="educationInfo">
+          <h2>Education</h2>
           <h3>{educationInfo.schoolName}</h3>
-          <p>{educationInfo.yearStart}</p>
-          <p>{educationInfo.yearEnd}</p>
           <p>{educationInfo.course}</p>
+          <p>{educationInfo.yearStart} - {educationInfo.yearEnd}</p>
           <p>{educationInfo.location}</p>
-        </div>
-        <div>
+        </section>
+        <section className="workInfo">
+          <h2>Work Experience</h2>
           <h3>{workInfo.company}</h3>
-          <p>{workInfo.position}</p>
-          <p>{workInfo.yearStart}</p>
-          <p>{workInfo.yearEnd}</p>
+          <p> {workInfo.position}</p>
+          <p>{workInfo.yearStart} - {workInfo.yearEnd}</p>
           <p>{workInfo.location}</p>
           <p>{workInfo.jobDesc}</p>
-        </div>
+        </section>
       </div>
     </div>
   );

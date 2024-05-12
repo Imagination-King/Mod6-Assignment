@@ -43,23 +43,23 @@ function Education({onChange}) {
   return(
     <div>
       <h2>Education</h2>
-      <div>
+      <div className="form-item">
         <label htmlFor="schoolName">School Name:</label>
         <input type="text" id="schoolName" name="schoolName" value={tempInfo.schoolName} onChange={handleChange} disabled={!editable}/>
       </div>
-      <div>
+      <div className="form-item">
         <label htmlFor="yearStart">Year Started:</label>
         <input type="text" id="yearStart" name="yearStart" value={tempInfo.yearStart} onChange={handleChange} disabled={!editable}/>
       </div>
-      <div>
+      <div className="form-item">
         <label htmlFor="yearEnd">Year Ended:</label>
         <input type="text" id="yearEnd" name="yearEnd" value={tempInfo.yearEnd} onChange={handleChange} disabled={!editable}/>
       </div>
-      <div>
+      <div className="form-item">
         <label htmlFor="course">Course:</label>
         <input type="text" id="course" name="course" value={tempInfo.course} onChange={handleChange} disabled={!editable}/>
       </div>
-      <div>
+      <div className="form-item">
         <label htmlFor="location">Location:</label>
         <input type="text" id="location" name="location" value={tempInfo.location} onChange={handleChange} disabled={!editable}/>
       </div>

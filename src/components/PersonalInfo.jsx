@@ -42,19 +42,19 @@ function PersonalInfo({onChange}) {
   return(
     <div>
       <h2>Personal Information</h2>
-      <div>
+      <div className="form-item">
         <label htmlFor="fullName">Full Name:</label>
         <input type="text" id="fullName" name="fullName" value={tempInfo.fullName} onChange={handleChange} disabled={!editable}/>
       </div>
-      <div>
+      <div className="form-item">
         <label htmlFor="email">Email:</label>
         <input type="text" id="email" name="email" value={tempInfo.email} onChange={handleChange} disabled={!editable}/>
       </div>
-      <div>
+      <div className="form-item">
         <label htmlFor="phone">Phone Number:</label>
         <input type="text" id="phone" name="phone" value={tempInfo.phone} onChange={handleChange} disabled={!editable}/>
       </div>
-      <div>
+      <div className="form-item">
         <label htmlFor="bio">Bio:</label>
         <textarea id="bio" name="bio" rows="4" cols="30" value={tempInfo.bio} onChange={handleChange} disabled={!editable}></textarea>
       </div>
